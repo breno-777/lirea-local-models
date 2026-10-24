@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "ocr.rtdetr.comic",
+      "name": "RT-DETR Comic",
+      "kind": "detector",
+      "file": "rtdetr/detector_int8.onnx",
+      "sizeBytes": 43838857,
+      "sha256": "b5022ad46416b6fe4f88b0cc082cfd2ff5b1cfc624088c2f19879485493f5913",
+      "input": "1x3x640x640",
+      "classes": ["bubble", "text_bubble", "text_free"],
+      "runtime": "onnxruntime-android"
+    }
+  ]
+}
