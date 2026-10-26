@@ -1,0 +1,50 @@
+# Lirea local models — notices
+
+This repository hosts model files downloaded on demand by the Lirea Android app.
+Each model remains subject to its upstream license. The repository's original
+manifest and scripts are Apache-2.0; the model files are covered by the notices
+below.
+
+## RT-DETR (`rtdetr/detector_int8.onnx`)
+
+- Upstream project: RT-DETR — <https://github.com/lyuwenyu/RT-DETR>
+- Copyright: RT-DETR authors (lyuwenyu and contributors).
+- License: Apache License 2.0.
+- This file is a conversion/quantization of RT-DETR weights for on-device
+  inference. It is distributed under the same Apache-2.0 terms.
+- The INT8 conversion may have been produced with PaddleDetection/Paddle2ONNX;
+  see the upstream projects for their notices.
+
+## PaddleOCR v4 (`paddle-v4/`)
+
+- Upstream project: PaddleOCR — <https://github.com/PaddlePaddle/PaddleOCR>
+- Copyright: PaddlePaddle Authors.
+- License: Apache License 2.0.
+- Files: `ch_PP-OCRv4_det_infer.onnx`, `ch_PP-OCRv4_rec_infer.onnx`,
+  `ppocr_keys_v1.txt`.
+
+## PaddleOCR v5 (`paddle-v5/`)
+
+- Upstream models:
+  - <https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det_onnx>
+  - <https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec_onnx>
+- Copyright: PaddlePaddle Authors.
+- License: Apache License 2.0.
+- Files: `pp_ocrv5_mobile_det.onnx`, `pp_ocrv5_mobile_rec.onnx`,
+  `ppocrv5_dict.txt` (dictionary extracted from the official `inference.yml`).
+
+## YOLO MangaLens (`yolo/`)
+
+- Legacy/experimental model. The upstream license and weight provenance were
+  not confirmed when this notice was written.
+- **Do not redistribute this model commercially** until its license is verified.
+  It is not used by the native Lirea app (the app uses RT-DETR for comic
+  detection and PaddleOCR/ML Kit for recognition).
+
+## Full license text
+
+The Apache License 2.0 is in `LICENSE` at the repository root. The MIT license
+for MI-GAN is in the `lirea-models` repository.
+
+If you redistribute these files, keep this notice and the upstream copyright
+notices, and state any changes (conversion, quantization, renaming).
