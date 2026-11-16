@@ -3,11 +3,11 @@
   "models": [
     {
       "id": "ocr.rtdetr.comic",
-      "name": "Lirea Layout v5 (mobile 720)",
+      "name": "Lirea Layout v5 (mobile 720, INT8 dynamic)",
       "kind": "detector",
-      "file": "layout-seg-v5/lirea-layout-seg-v5-mobile.onnx",
-      "sizeBytes": 73030389,
-      "sha256": "1f37c95847e8c7acd02663decbc29c384f43e932b47228ee9cfc830b392d4526",
+      "file": "layout-seg-v5/lirea-layout-seg-v5-mobile-int8.onnx",
+      "sizeBytes": 44778062,
+      "sha256": "3a664a7b6dbcb3ae844a2fd639442d849a458878aeefb53c60a40d87191356b1",
       "input": "1x3x720x720",
       "classes": ["bubble", "text_bubble", "text_free", "sfx"],
       "runtime": "onnxruntime-android",
